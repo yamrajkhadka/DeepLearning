@@ -19,6 +19,6 @@ On Day 1 of my 100 Days of Deep Learning challenge, I learned about **Perceptron
 #### Perceptron vs Neuron:
 - **Perceptron**: A single-layer neural network that makes decisions based on a linear function.
 - **Neuron**: A more complex unit found in multi-layer networks with nonlinear activation functions, capable of solving more complex problems.
-![Perceptron vs Neuron](![Screenshot 2025-02-05 005546](https://github.com/user-attachments/assets/279836e5-f572-4a75-8ffa-1b7b56040858)
+(![Screenshot 2025-02-05 005546](https://github.com/user-attachments/assets/279836e5-f572-4a75-8ffa-1b7b56040858)
 )  
 
