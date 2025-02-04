@@ -1,9 +1,7 @@
 # DeepLearning
 Deep Learning Journey 🚀 This repo covers key concepts, code implementations, and projects on deep learning. It includes Jupyter notebooks, explanations, real-world case studies, and optimization techniques. Topics include neural networks, CNNs, RNNs, and model tuning. Explore and learn together! 🚀
-# Day 1: Perceptron - A Simple Neural Network Model
-
-## Overview
-On Day 1 of my "100 Days of Deep Learning" journey, I explored the **Perceptron**, a foundational algorithm for binary classification. In this session, I learned how to:
+## Day 1: Perceptron - A Simple Neural Network Model
+On Day 1 of my Deep Learning journey, I explored the **Perceptron**, a foundational algorithm for binary classification. In this session, I learned how to:
 
 - Build a Perceptron model from scratch.
 - Visualize decision boundaries.
@@ -14,18 +12,17 @@ On Day 1 of my "100 Days of Deep Learning" journey, I explored the **Perceptron*
 
 ---
 
-## Key Learnings
+### Key Learnings
 
-### 1. What is a Perceptron?
+#### 1. What is a Perceptron?
 - A **Perceptron** is a single-layer neural network that performs binary classification.
 - Unlike Perceptrons, **Neurons** in multi-layer networks are part of more complex models with non-linear activation functions.
 
-#### Perceptron vs Neurons:
-- **Perceptron:** Single-layer, linear activation, suited for linearly separable problems.
-- **Neurons:** Multiple layers, non-linear activations (e.g., ReLU, Sigmoid), capable of solving complex, non-linear problems.
+#### Key Difference:
+A Perceptron is a simplified mathematical model of a neuron used in machine learning, while a Human Neuron is a complex biological cell involved in brain functions.
 
-!(![Screenshot 2025-02-05 005546](https://github.com/user-attachments/assets/6b4653ff-476e-4019-8f76-6a5128fb44c5)
-)
+![Screenshot 2025-02-05 005546](https://github.com/user-attachments/assets/6b4653ff-476e-4019-8f76-6a5128fb44c5)
+
 
 ---
 
