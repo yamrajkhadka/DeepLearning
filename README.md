@@ -30,6 +30,7 @@ A Perceptron is a simplified mathematical model of a neuron used in machine lear
 #### 2. Building and Visualizing a Perceptron
 I implemented a **Perceptron** in Python and visualized its decision boundary between two classes.
 !![image](https://github.com/user-attachments/assets/e9a93c01-9fd8-49b2-9924-994ae57d3f58)
-! (https://github.com/yamrajkhadka/DeepLearning/blob/main/Day1/d1_visualization.png)
+!![image](https://github.com/user-attachments/assets/f324a459-4137-4284-aa72-c137085befcc)
+
 
 
