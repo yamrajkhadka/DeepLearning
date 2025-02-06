@@ -29,6 +29,8 @@ I implemented a **Perceptron** in Python and visualized its decision boundary be
 !![image](https://github.com/user-attachments/assets/f324a459-4137-4284-aa72-c137085befcc)
 #### 3.Limitation of perceptron
 Inability to Solve Non-Linearly Separable Problems. The Perceptron struggles with datasets where classes cannot be separated by a straight line. A classic example is the XOR problem, which it cannot solve due to its linear decision boundary. 
+!![image](https://github.com/user-attachments/assets/e8e57bf7-6078-4f2c-8eac-9da87b173cfb)
+
 
 
 
