@@ -22,6 +22,7 @@ On Day 1 of my Deep Learning journey, I explored the **Perceptron**, a foundatio
 A Perceptron is a simplified mathematical model of a neuron used in machine learning, while a Human Neuron is a complex biological cell involved in brain functions.
 
 ![Screenshot 2025-02-05 005546](https://github.com/user-attachments/assets/6b4653ff-476e-4019-8f76-6a5128fb44c5)
+!https://github.com/yamrajkhadka/DeepLearning/blob/main/Day1/d1_visualization.png
 
 
 ---
