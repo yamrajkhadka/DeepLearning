@@ -25,7 +25,7 @@ A Perceptron is a simplified mathematical model of a neuron used in machine lear
 ---
 #### 2. Building and Visualizing a Perceptron
 I implemented a **Perceptron** in Python and visualized its decision boundary between two classes.
-!![image](https://github.com/user-attachments/assets/e9a93c01-9fd8-49b2-9924-994ae57d3f58)
+!![image](https://github.com/user-attachments/assets/5d8a4a5c-cd6c-4b1f-9f94-54bedbc220b6)
 !![image](https://github.com/user-attachments/assets/f324a459-4137-4284-aa72-c137085befcc)
 #### 3.Limitation of perceptron
 Inability to Solve Non-Linearly Separable Problems. The Perceptron struggles with datasets where classes cannot be separated by a straight line. A classic example is the XOR problem, which it cannot solve due to its linear decision boundary. 
