@@ -48,7 +48,8 @@ MLP is a type of artificial neural network consisting of multiple layers:
 ✔ **Output Layer** – Produces the final prediction  
 
 MLP intution:
-![MLP Visualization](your_image_link_here)  
+!![image](https://github.com/user-attachments/assets/80bd9c1d-3b8b-45ec-b1d4-332057d34b1f)
+
 
 ---
 
