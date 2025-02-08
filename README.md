@@ -70,36 +70,11 @@ Selfmade NN for forward propagation implementation:
 ---
 
 ### 📝 Implementation in Python (Without DL Framework)  
-Here’s a simple **NumPy implementation** of forward propagation in an MLP:  
+Here’s a simple **NumPy implementation** of forward propagation in an MLP in pythan:
+![image](https://github.com/user-attachments/assets/854d3865-5021-4e33-9ca8-cb80bf2efbd4)
 
-```python
-import numpy as np
 
-# Activation function: Sigmoid
-def sigmoid(z):
-    return 1 / (1 + np.exp(-z))
 
-# Forward Propagation
-def forward_propagation(X, W1, b1, W2, b2):
-    Z1 = np.dot(W1, X) + b1
-    A1 = sigmoid(Z1)
-    Z2 = np.dot(W2, A1) + b2
-    A2 = sigmoid(Z2)
-    return A2  # Final output
-
-# Example Input
-X = np.array([[0.5], [0.2]])  
-
-# Weights & Biases
-W1 = np.array([[0.3, 0.6], [0.1, 0.4]])  # 2 neurons, 2 inputs
-b1 = np.array([[0.1], [0.2]])
-
-W2 = np.array([[0.5, 0.7]])  # 1 neuron, 2 inputs
-b2 = np.array([[0.3]])
-
-# Forward Propagation Execution
-output = forward_propagation(X, W1, b1, W2, b2)
-print("Final Output:", output)
 
 
 
