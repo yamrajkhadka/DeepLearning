@@ -63,7 +63,9 @@ Forward propagation is the process where input data moves through the network:
 2️⃣ Apply activation function (e.g., Sigmoid, ReLU)  
 3️⃣ Pass the result to the next layer until reaching the output  
 
-![Forward Propagation Intuition](your_image_link_here)  
+Selfmade NN for forward propagation implementation:
+![image](https://github.com/user-attachments/assets/a9728eb0-7252-4547-a9be-e4979463c06c)
+
 
 ---
 
