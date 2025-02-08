@@ -34,28 +34,65 @@ Inability to Solve Non-Linearly Separable Problems. The Perceptron struggles wit
 
 
 
-## Day2:
-Today, I learned about Multi-Layer Perceptrons (MLP) and Forward Propagation, which are key concepts in deep learning. Below is a brief summary of my learning along with visualization, intuition, and code implementation.
 
--🧠 What is Multi-Layer Perceptron (MLP)?
-MLP is a type of artificial neural network that consists of multiple layers:
-✔ Input Layer – Takes the raw input data
-✔ Hidden Layer(s) – Applies transformations using weights & activation functions
-✔ Output Layer – Produces the final prediction
-Intution behind MLP:
-!
+## 🚀 Day 2: Multi-Layer Perceptron (MLP) & Forward Propagation:
 
+Today, I explored **Multi-Layer Perceptrons (MLP)** and **Forward Propagation**, key concepts in deep learning. Below is a summary of my learning with **visualizations, intuition, and code implementation**.  
 
+---
 
--🔁 Understanding Forward Propagation
-Forward propagation is the process where input data moves through the network, passing through each layer, applying weights, biases, and activation functions, to produce an output.
-💡 The steps:
-1️⃣ Compute weighted sum of inputs in each neuron
-2️⃣ Apply activation function (e.g., Sigmoid, ReLU)
-3️⃣ Pass the result to the next layer until reaching the output
+### 📌 What is Multi-Layer Perceptron (MLP)?  
+MLP is a type of artificial neural network consisting of multiple layers:  
+✔ **Input Layer** – Accepts the raw input data  
+✔ **Hidden Layer(s)** – Applies transformations using weights & activation functions  
+✔ **Output Layer** – Produces the final prediction  
 
-🖼 (Here, add your forward propagation visualization.)
+MLP intution:
+![MLP Visualization](your_image_link_here)  
 
+---
+
+### 🔁 Understanding Forward Propagation  
+Forward propagation is the process where input data moves through the network:  
+1️⃣ Compute weighted sum of inputs in each neuron  
+2️⃣ Apply activation function (e.g., Sigmoid, ReLU)  
+3️⃣ Pass the result to the next layer until reaching the output  
+
+![Forward Propagation Intuition](your_image_link_here)  
+
+---
+
+### 📝 Implementation in Python (Without DL Framework)  
+Here’s a simple **NumPy implementation** of forward propagation in an MLP:  
+
+```python
+import numpy as np
+
+# Activation function: Sigmoid
+def sigmoid(z):
+    return 1 / (1 + np.exp(-z))
+
+# Forward Propagation
+def forward_propagation(X, W1, b1, W2, b2):
+    Z1 = np.dot(W1, X) + b1
+    A1 = sigmoid(Z1)
+    Z2 = np.dot(W2, A1) + b2
+    A2 = sigmoid(Z2)
+    return A2  # Final output
+
+# Example Input
+X = np.array([[0.5], [0.2]])  
+
+# Weights & Biases
+W1 = np.array([[0.3, 0.6], [0.1, 0.4]])  # 2 neurons, 2 inputs
+b1 = np.array([[0.1], [0.2]])
+
+W2 = np.array([[0.5, 0.7]])  # 1 neuron, 2 inputs
+b2 = np.array([[0.3]])
+
+# Forward Propagation Execution
+output = forward_propagation(X, W1, b1, W2, b2)
+print("Final Output:", output)
 
 
 
