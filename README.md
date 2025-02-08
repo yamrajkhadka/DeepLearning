@@ -76,6 +76,8 @@ Here’s a simple **NumPy implementation** of forward propagation in an MLP in p
 Implimentation using dl frameworks:
 ![image](https://github.com/user-attachments/assets/cf395147-5e39-488d-8d35-c444ecbdbf8f)
 
+Next step: I'm curious to dive deeper into how neural networks update weights and biases to generate optimal output. Before exploring activation functions and backpropagation
+
 
 
 
