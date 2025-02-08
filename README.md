@@ -34,10 +34,10 @@ Inability to Solve Non-Linearly Separable Problems. The Perceptron struggles wit
 
 
 
-##Day2
+## Day2:
 Today, I learned about Multi-Layer Perceptrons (MLP) and Forward Propagation, which are key concepts in deep learning. Below is a brief summary of my learning along with visualization, intuition, and code implementation.
 
-🧠 What is Multi-Layer Perceptron (MLP)?
+-🧠 What is Multi-Layer Perceptron (MLP)?
 MLP is a type of artificial neural network that consists of multiple layers:
 ✔ Input Layer – Takes the raw input data
 ✔ Hidden Layer(s) – Applies transformations using weights & activation functions
@@ -47,9 +47,8 @@ Intution behind MLP:
 
 
 
-🔁 Understanding Forward Propagation
+-🔁 Understanding Forward Propagation
 Forward propagation is the process where input data moves through the network, passing through each layer, applying weights, biases, and activation functions, to produce an output.
-
 💡 The steps:
 1️⃣ Compute weighted sum of inputs in each neuron
 2️⃣ Apply activation function (e.g., Sigmoid, ReLU)
