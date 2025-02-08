@@ -34,7 +34,7 @@ Inability to Solve Non-Linearly Separable Problems. The Perceptron struggles wit
 
 
 
-## Day 2 of Deep Learning: MLP and Forward Propagation
+## Day 2: MLP and Forward Propagation
 Today, I explored **Multi-Layer Perceptrons (MLPs)** and **Forward Propagation**. Here's a quick overview of what I learned and implemented.
 
 
