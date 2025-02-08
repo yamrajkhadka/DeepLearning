@@ -73,6 +73,10 @@ Selfmade NN for forward propagation implementation:
 Here’s a simple **NumPy implementation** of forward propagation in an MLP in pythan:
 ![image](https://github.com/user-attachments/assets/854d3865-5021-4e33-9ca8-cb80bf2efbd4)
 
+Implimentation using dl frameworks:
+![image](https://github.com/user-attachments/assets/cf395147-5e39-488d-8d35-c444ecbdbf8f)
+
+
 
 
 
