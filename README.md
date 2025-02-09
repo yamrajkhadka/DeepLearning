@@ -130,7 +130,6 @@ where \( \eta \) is the learning rate.
 ## 5️⃣ Code Implementation 💻  
 (📂 Link to the Jupyter Notebook: **[weight_bias_optimization.ipynb](./weight_bias_optimization.ipynb)**)  
 
-```python
 
 
 
@@ -204,8 +203,7 @@ The repository includes the following Python scripts:
 - **Gradient Descent**: `code/gradient_descent.py`
 - **Bias Example**: `code/bias_example.py`
 
-To run the code, clone the repository and execute the scripts:
-```bash
-git clone https://github.com/your-username/Neural-Network-Weight-Bias-Updates.git
-cd Neural-Network-Weight-Bias-Updates/code
-python forward_propagation.py
+
+
+
+
