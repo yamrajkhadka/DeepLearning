@@ -82,7 +82,7 @@ Next step: I'm curious to dive deeper into how neural networks update weights an
 
 ## 🚀 Day 3: Understanding Weight & Bias Optimization in Neural Networks  
 
-###1️⃣ Introduction  
+### 1️⃣ Introduction  
 Before diving into activation functions and backpropagation, it's crucial to understand **how neural networks update weights and biases** to minimize loss and generate optimal outputs.  
 
 ### 2️⃣ Role of Weights & Biases  
@@ -115,9 +115,9 @@ f(z) = \max(0, WX + b)
 - \( b > 0 \) → ReLU activates **sooner**.  
 - \( b < 0 \) → ReLU activates **later**.  
 
-(📷 Add your **bias visualization image** here)  
+  
 
-###4️⃣ Gradient Descent: Updating Weights & Biases  
+### 4️⃣ Gradient Descent: Updating Weights & Biases  
 To minimize the loss function, we use **Gradient Descent**:  
 \[
 W_{new} = W - \eta \frac{\partial L}{\partial W}
@@ -127,7 +127,7 @@ b_{new} = b - \eta \frac{\partial L}{\partial b}
 \]
 where \( \eta \) is the learning rate.  
 
-###5️⃣ Code Implementation 💻  
+### 5️⃣ Code Implementation 💻  
 (📂 Link to the Jupyter Notebook: **[weight_bias_optimization.ipynb](./weight_bias_optimization.ipynb)**)  
 
 
