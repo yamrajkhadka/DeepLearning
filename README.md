@@ -130,7 +130,14 @@ where \( \eta \) is the learning rate.
 Gradient Descent Visualization:
 ![image](https://github.com/user-attachments/assets/032efe7e-bb0a-4ce6-9969-f0fb5dcfb6e6)
 
+Logistic Regretation Derivatives For Gradient Descent:
 ![image](https://github.com/user-attachments/assets/4e7bd5bb-6d31-42a7-87ff-17f8498f2a5c)
+
+Implimentation Of LR:
+![image](https://github.com/user-attachments/assets/0795c333-9f48-4151-835c-f559a028371a)
+
+Vectoritation_Visualization:
+
 
 
 
