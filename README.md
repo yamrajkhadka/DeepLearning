@@ -126,6 +126,8 @@ W_{new} = W - \eta \frac{\partial L}{\partial W}
 b_{new} = b - \eta \frac{\partial L}{\partial b}
 \]
 where \( \eta \) is the learning rate. 
+
+Gradient Descent Visualization:
 ![image](https://github.com/user-attachments/assets/032efe7e-bb0a-4ce6-9969-f0fb5dcfb6e6)
 
 
