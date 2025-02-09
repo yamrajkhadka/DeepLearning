@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b0f525cb-b8ac-4cd0-911a-e07931bd92fb)
+
 
 
 # DeepLearning
