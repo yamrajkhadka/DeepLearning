@@ -150,7 +150,8 @@ Vectoritation_Visualization:
 
 
 ### 5️⃣ Code Implementation 💻  
-(📂 Link to the Jupyter Notebook: **[weight_bias_optimization.ipynb](./weight_bias_optimization.ipynb)**)  
+![first1](https://github.com/user-attachments/assets/6e138233-715a-417f-a846-a30d7155f7cb)
+
 
 
 
