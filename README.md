@@ -80,6 +80,84 @@ Next step: I'm curious to dive deeper into how neural networks update weights an
 
 
 
+# 🚀 Day X: Understanding Weight & Bias Optimization in Neural Networks  
+
+## 1️⃣ Introduction  
+Before diving into activation functions and backpropagation, it's crucial to understand **how neural networks update weights and biases** to minimize loss and generate optimal outputs.  
+
+## 2️⃣ Role of Weights & Biases  
+- **Weights (W):** Determine the strength of connections between neurons.  
+- **Bias (b):** Allows shifting of activation functions, enhancing flexibility in decision boundaries.  
+
+Each neuron computes:  
+\[
+z = W \cdot X + b
+\]  
+where:  
+- \( W \) = weight  
+- \( X \) = input  
+- \( b \) = bias  
+
+## 3️⃣ Why Bias Matters? 🤔  
+Without bias, all decisions must pass through the origin (0,0), which restricts the model’s flexibility.  
+
+Example with sigmoid:  
+\[
+\sigma(WX + b) = \frac{1}{1 + e^{-(WX + b)}}
+\]  
+- If \( b > 0 \), the function activates **earlier**.  
+- If \( b < 0 \), the function activates **later**.  
+
+For **ReLU Activation**:  
+\[
+f(z) = \max(0, WX + b)
+\]  
+- \( b > 0 \) → ReLU activates **sooner**.  
+- \( b < 0 \) → ReLU activates **later**.  
+
+(📷 Add your **bias visualization image** here)  
+
+## 4️⃣ Gradient Descent: Updating Weights & Biases  
+To minimize the loss function, we use **Gradient Descent**:  
+\[
+W_{new} = W - \eta \frac{\partial L}{\partial W}
+\]
+\[
+b_{new} = b - \eta \frac{\partial L}{\partial b}
+\]
+where \( \eta \) is the learning rate.  
+
+## 5️⃣ Code Implementation 💻  
+(📂 Link to the Jupyter Notebook: **[weight_bias_optimization.ipynb](./weight_bias_optimization.ipynb)**)  
+
+```python
+# Example: Gradient Descent for Weight & Bias Update
+import numpy as np
+
+# Initialize weight and bias
+W = np.random.randn()
+b = np.random.randn()
+learning_rate = 0.01
+
+# Dummy data (X, Y)
+X = np.array([1, 2, 3, 4])
+Y = np.array([2, 4, 6, 8])
+
+# Compute predictions
+Y_pred = W * X + b
+loss = np.mean((Y - Y_pred) ** 2)
+
+# Compute gradients
+dW = -2 * np.mean(X * (Y - Y_pred))
+db = -2 * np.mean(Y - Y_pred)
+
+# Update weights and bias
+W -= learning_rate * dW
+b -= learning_rate * db
+
+print(f"Updated W: {W}, Updated b: {b}")
+
+
 
 
 
