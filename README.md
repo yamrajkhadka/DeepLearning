@@ -169,6 +169,8 @@ Activation functions are essential in neural networks because:
 
 ### Step 2: Types of Activation Functions
 Below is a detailed breakdown of common activation functions:
+![image](https://github.com/user-attachments/assets/a3fbb023-c843-447c-9977-bddf88efedb9)
+
 
 
 
