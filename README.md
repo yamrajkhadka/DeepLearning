@@ -225,77 +225,128 @@ Activation functions introduce non-linearity, enabling the network to learn comp
 
 
 
-## Day5: Understanding Backpropagation in Neural Networks
+# Understanding Backpropagation in Neural Networks
 
--Backpropagation is a fundamental algorithm used to train neural networks by minimizing the loss function. It consists of two main phases: **forward propagation** (to compute predictions) and **backward propagation** (to compute gradients for updating parameters).
+Backpropagation is the backbone of training neural networks. It computes the gradients of the loss function with respect to the network's parameters and updates them using gradient descent. This document explains the process step-by-step and includes clear visual representations of the formulas.
 
 ---
 
-### 1. Forward Propagation
+## 1. Forward Propagation
 
-- **Step 1:** Compute the weighted sum of inputs and biases.
-- **Step 2:** Apply an activation function to generate the output for each layer.
+During the forward pass, the network computes the weighted sum of inputs, applies biases, and then uses activation functions to produce the outputs for each layer.
 
-**Example:**
-
+### Example for Layer 1:
 \[
 Z^{[1]} = W^{[1]} X + b^{[1]}
 \]
-
 \[
-A^{[1]} = \sigma(Z^{[1]})
+A^{[1]} = \sigma\left(Z^{[1]}\right)
 \]
 
 Where:
-- \(W^{[1]}\) and \(b^{[1]}\) are the weights and biases of the first layer.
-- \(\sigma\) represents an activation function (e.g., sigmoid, ReLU).
+- \( W^{[1]} \) is the weight matrix for layer 1.
+- \( b^{[1]} \) is the bias vector for layer 1.
+- \( X \) is the input data.
+- \( \sigma \) is an activation function (e.g., sigmoid, ReLU).
 
 ---
 
-### 2. Loss Calculation
+## 2. Loss Calculation
 
-The loss function \(L\) quantifies the error between the predicted output and the actual labels. For instance, in binary classification, you might use binary cross-entropy.
-
----
-
-### 3. Backward Propagation
-
-Backpropagation computes the gradients of the loss with respect to the weights and biases so that they can be updated to reduce the loss.
-
-### Gradient Descent Update Rule
-
-The parameters are updated using gradient descent as follows:
+The loss function \( L \) quantifies the error between the predicted outputs and the true labels. For instance, in binary classification, you might use the binary cross-entropy loss:
 
 \[
-W_{\text{new}} = W_{\text{old}} - \eta \frac{\partial L}{\partial W_{\text{old}}}
-\]
-
-\[
-b_{\text{new}} = b_{\text{old}} - \eta \frac{\partial L}{\partial b_{\text{old}}}
+L = -\frac{1}{m} \sum_{i=1}^{m} \left( y^{(i)} \log\left(\hat{y}^{(i)}\right) + \left(1 - y^{(i)}\right) \log\left(1 - \hat{y}^{(i)}\right) \right)
 \]
 
 Where:
-- \(\eta\) is the learning rate.
-- \(\frac{\partial L}{\partial W_{\text{old}}}\) and \(\frac{\partial L}{\partial b_{\text{old}}}\) are the gradients of the loss with respect to the weights and biases, respectively.
+- \( m \) is the number of training examples.
+- \( y^{(i)} \) is the true label for the \( i \)-th example.
+- \( \hat{y}^{(i)} \) is the predicted output for the \( i \)-th example.
 
 ---
 
-### 4. Iterative Training Process
+## 3. Backward Propagation
 
-1. **Forward Pass:** Compute the outputs for each layer using the current parameters.
-2. **Loss Computation:** Calculate the loss \(L\) by comparing the predictions with the actual labels.
-3. **Backward Pass:** Use backpropagation to compute the gradients for each parameter.
-4. **Parameter Update:** Adjust the weights and biases using the gradient descent update rules.
-5. **Repeat:** Iterate the process until the model converges (i.e., until the loss stabilizes or decreases minimally).
+Backward propagation (backprop) computes the gradients of the loss with respect to the weights and biases using the chain rule. The process involves two major steps:
+
+### a. Compute the Error at the Output Layer
+
+For a sigmoid activation in the output layer, the error is calculated as:
+
+\[
+dZ^{[L]} = A^{[L]} - Y
+\]
+
+Where:
+- \( A^{[L]} \) is the activation of the output layer.
+- \( Y \) is the true label (or the one-hot encoded label in multi-class problems).
+
+### b. Compute the Gradients for Each Parameter
+
+For any layer \( l \), the gradients of the weights and biases are computed as follows:
+
+\[
+dW^{[l]} = \frac{1}{m} \, A^{[l-1]^T} \cdot dZ^{[l]}
+\]
+\[
+db^{[l]} = \frac{1}{m} \sum_{i=1}^{m} dZ^{[l](i)}
+\]
+
+For hidden layers, the error is propagated backwards:
+
+\[
+dA^{[l]} = dZ^{[l+1]} \cdot W^{[l+1]^T}
+\]
+\[
+dZ^{[l]} = dA^{[l]} \odot g'\left( Z^{[l]} \right)
+\]
+
+Where:
+- \( g' \) is the derivative of the activation function used in layer \( l \).
+- \( \odot \) denotes element-wise multiplication.
 
 ---
 
+## 4. Parameter Update
 
+After computing the gradients, parameters are updated using gradient descent:
 
+\[
+W^{[l]}_{\text{new}} = W^{[l]}_{\text{old}} - \eta \, dW^{[l]}
+\]
+\[
+b^{[l]}_{\text{new}} = b^{[l]}_{\text{old}} - \eta \, db^{[l]}
+\]
 
+Where:
+- \( \eta \) is the learning rate.
+- \( dW^{[l]} \) and \( db^{[l]} \) are the gradients for the weights and biases of layer \( l \), respectively.
 
+---
 
+## 5. Iterative Training Process
 
+The training process iterates over the following steps until convergence:
+1. **Forward Pass:** Compute the outputs for each layer.
+2. **Loss Computation:** Evaluate the loss \( L \) between predictions and actual labels.
+3. **Backward Pass:** Compute the gradients using backpropagation.
+4. **Parameter Update:** Adjust the weights and biases using the computed gradients.
+5. **Repeat:** Continue until the loss function converges.
+
+---
+
+## Key Takeaways
+
+- **Efficiency:** Backpropagation leverages the chain rule to efficiently compute gradients.
+- **Optimization:** Gradients guide the update of weights and biases, minimizing the loss function.
+- **Foundation:** This algorithm is critical for training deep neural networks and forms the basis of many modern deep learning architectures.
+
+---
+
+Explore the accompanying code and additional documentation in this repository to dive deeper into the implementation details of backpropagation.
+
+Happy Learning! 🚀
 
 
 
