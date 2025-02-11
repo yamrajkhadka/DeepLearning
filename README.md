@@ -292,6 +292,8 @@ The gradients for the weights \( W^{[l]} \) and biases \( b^{[l]} \) in hidden l
 
 This process of computing gradients and propagating errors backward through the network is the essence of backpropagation. It enables efficient training of neural networks by updating the parameters to minimize the loss. 🚀
 
+![image](https://github.com/user-attachments/assets/c18466d2-6197-4003-a9a6-68e17e62f95d)
+
 
 
 
