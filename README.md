@@ -225,43 +225,6 @@ Activation functions introduce non-linearity, enabling the network to learn comp
 
 
 
-## Day 4:Understanding Backpropagation in Neural Networks
-
--Backpropagation is a fundamental algorithm used to train neural networks by minimizing the loss function. Here's a simplified breakdown:
-
-### Forward Propagation:
-- Compute the weighted sum of inputs and biases.
-- Apply activation functions to get the output of each layer.
-
-**Example:**
-\[
-Z^{[1]} = W^{[1]}X + b^{[1]}
-\]
-\[
-A^{[1]} = \sigma(Z^{[1]})
-\]
-
-### Loss Calculation:
-- Compare the predicted output with the actual label using a loss function \( L \).
-
-### Backward Propagation:
-- Compute gradients of the loss with respect to weights and biases.
-- Update weights and biases using gradient descent:
-
-\[
-W_{\text{new}} = W_{\text{old}} - \eta \frac{\partial L}{\partial W_{\text{old}}}
-\]
-\[
-b_{\text{new}} = b_{\text{old}} - \eta \frac{\partial L}{\partial b_{\text{old}}}
-\]
-
-### Iteration:
-- Repeat the forward and backward passes until the model converges.
-
-
-
-
-
 
 
 
