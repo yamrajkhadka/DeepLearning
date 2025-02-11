@@ -225,6 +225,72 @@ Activation functions introduce non-linearity, enabling the network to learn comp
 
 
 
+## Day5: Backpropagation
+
+Backpropagation computes the gradients of the loss with respect to each parameter in the network. This is done by propagating the error from the output layer back to the input layer using the chain rule.
+
+---
+
+### 3.1 Error at the Output Layer
+
+For the output layer \( L \), the error \( \delta^{[L]} \) is computed as:
+
+\[
+\delta^{[L]} = A^{[L]} - Y
+\]
+
+- \( A^{[L]} \): Predicted output  
+- \( Y \): True labels  
+
+---
+
+### 3.2 Gradients for the Output Layer
+
+The gradients of the loss with respect to the weights \( W^{[L]} \) and biases \( b^{[L]} \) in the output layer are:
+
+\[
+\frac{\partial L}{\partial W^{[L]}} = \frac{1}{m} A^{[L-1]}^T \delta^{[L]}
+\]
+
+\[
+\frac{\partial L}{\partial b^{[L]}} = \frac{1}{m} \sum_{i=1}^{m} \delta^{[L](i)}
+\]
+
+- \( A^{[L-1]} \): Activations from the previous layer  
+- \( \delta^{[L]} \): Error at the output layer  
+
+---
+
+### 3.3 Propagating Error to Hidden Layers
+
+For each hidden layer \( l \), the error \( \delta^{[l]} \) is computed as:
+
+\[
+\delta^{[l]} = \left( W^{[l+1]}^T \delta^{[l+1]} \right) \odot g'(Z^{[l]})
+\]
+
+- \( W^{[l+1]} \): Weights of the next layer  
+- \( \delta^{[l+1]} \): Error from the next layer  
+- \( g'(Z^{[l]}) \): Derivative of the activation function at layer \( l \)  
+- \( \odot \): Element-wise multiplication  
+
+---
+
+### 3.4 Gradients for Hidden Layers
+
+The gradients for the weights \( W^{[l]} \) and biases \( b^{[l]} \) in hidden layer \( l \) are:
+
+\[
+\frac{\partial L}{\partial W^{[l]}} = \frac{1}{m} A^{[l-1]}^T \delta^{[l]}
+\]
+
+\[
+\frac{\partial L}{\partial b^{[l]}} = \frac{1}{m} \sum_{i=1}^{m} \delta^{[l](i)}
+\]
+
+---
+
+This process of computing gradients and propagating errors backward through the network is the essence of backpropagation. It enables efficient training of neural networks by updating the parameters to minimize the loss. 🚀
 
 
 
