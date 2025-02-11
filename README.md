@@ -225,6 +225,284 @@ Activation functions introduce non-linearity, enabling the network to learn comp
 
 
 
+Backpropagation
+Backpropagation computes the gradients of the loss with respect to each parameter in the network. This is done by propagating the error from the output layer back to the input layer using the chain rule.
+
+3.1 Error at the Output Layer
+For the output layer 
+L
+L, the error 
+δ
+[
+L
+]
+δ 
+[L]
+  is computed as:
+
+δ
+[
+L
+]
+=
+A
+[
+L
+]
+−
+Y
+δ 
+[L]
+ =A 
+[L]
+ −Y
+A
+[
+L
+]
+A 
+[L]
+ : Predicted output
+
+Y
+Y: True labels
+
+3.2 Gradients for the Output Layer
+The gradients of the loss with respect to the weights 
+W
+[
+L
+]
+W 
+[L]
+  and biases 
+b
+[
+L
+]
+b 
+[L]
+  in the output layer are:
+
+∂
+L
+∂
+W
+[
+L
+]
+=
+1
+m
+A
+∂W 
+[L]
+ 
+∂L
+​
+ = 
+m
+1
+​
+ A
+∂
+L
+∂
+b
+[
+L
+]
+=
+1
+m
+∑
+i
+=
+1
+m
+δ
+[
+L
+]
+(
+i
+)
+∂b 
+[L]
+ 
+∂L
+​
+ = 
+m
+1
+​
+  
+i=1
+∑
+m
+​
+ δ 
+[L](i)
+ 
+A
+[
+L
+−
+1
+]
+A 
+[L−1]
+ : Activations from the previous layer
+
+δ
+[
+L
+]
+δ 
+[L]
+ : Error at the output layer
+
+3.3 Propagating Error to Hidden Layers
+For each hidden layer 
+l
+l, the error 
+δ
+[
+l
+]
+δ 
+[l]
+  is computed as:
+
+δ
+[
+l
+]
+=
+(
+W
+δ 
+[l]
+ =(W
+W
+[
+l
++
+1
+]
+W 
+[l+1]
+ : Weights of the next layer
+
+δ
+[
+l
++
+1
+]
+δ 
+[l+1]
+ : Error from the next layer
+
+g
+′
+(
+Z
+[
+l
+]
+)
+g 
+′
+ (Z 
+[l]
+ ): Derivative of the activation function at layer 
+l
+l
+
+⊙
+⊙: Element-wise multiplication
+
+3.4 Gradients for Hidden Layers
+The gradients for the weights 
+W
+[
+l
+]
+W 
+[l]
+  and biases 
+b
+[
+l
+]
+b 
+[l]
+  in hidden layer 
+l
+l are:
+
+∂
+L
+∂
+W
+[
+l
+]
+=
+1
+m
+A
+∂W 
+[l]
+ 
+∂L
+​
+ = 
+m
+1
+​
+ A
+∂
+L
+∂
+b
+[
+l
+]
+=
+1
+m
+∑
+i
+=
+1
+m
+δ
+[
+l
+]
+(
+i
+)
+∂b 
+[l]
+ 
+∂L
+​
+ = 
+m
+1
+​
+  
+i=1
+∑
+m
+​
+ δ 
+[l](i)
+ 
+4. Parameter Update
 
 
 
