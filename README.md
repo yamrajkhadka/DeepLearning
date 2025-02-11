@@ -225,6 +225,73 @@ Activation functions introduce non-linearity, enabling the network to learn comp
 
 
 
+## Day5: Understanding Backpropagation in Neural Networks
+
+-Backpropagation is a fundamental algorithm used to train neural networks by minimizing the loss function. It consists of two main phases: **forward propagation** (to compute predictions) and **backward propagation** (to compute gradients for updating parameters).
+
+---
+
+### 1. Forward Propagation
+
+- **Step 1:** Compute the weighted sum of inputs and biases.
+- **Step 2:** Apply an activation function to generate the output for each layer.
+
+**Example:**
+
+\[
+Z^{[1]} = W^{[1]} X + b^{[1]}
+\]
+
+\[
+A^{[1]} = \sigma(Z^{[1]})
+\]
+
+Where:
+- \(W^{[1]}\) and \(b^{[1]}\) are the weights and biases of the first layer.
+- \(\sigma\) represents an activation function (e.g., sigmoid, ReLU).
+
+---
+
+### 2. Loss Calculation
+
+The loss function \(L\) quantifies the error between the predicted output and the actual labels. For instance, in binary classification, you might use binary cross-entropy.
+
+---
+
+### 3. Backward Propagation
+
+Backpropagation computes the gradients of the loss with respect to the weights and biases so that they can be updated to reduce the loss.
+
+### Gradient Descent Update Rule
+
+The parameters are updated using gradient descent as follows:
+
+\[
+W_{\text{new}} = W_{\text{old}} - \eta \frac{\partial L}{\partial W_{\text{old}}}
+\]
+
+\[
+b_{\text{new}} = b_{\text{old}} - \eta \frac{\partial L}{\partial b_{\text{old}}}
+\]
+
+Where:
+- \(\eta\) is the learning rate.
+- \(\frac{\partial L}{\partial W_{\text{old}}}\) and \(\frac{\partial L}{\partial b_{\text{old}}}\) are the gradients of the loss with respect to the weights and biases, respectively.
+
+---
+
+### 4. Iterative Training Process
+
+1. **Forward Pass:** Compute the outputs for each layer using the current parameters.
+2. **Loss Computation:** Calculate the loss \(L\) by comparing the predictions with the actual labels.
+3. **Backward Pass:** Use backpropagation to compute the gradients for each parameter.
+4. **Parameter Update:** Adjust the weights and biases using the gradient descent update rules.
+5. **Repeat:** Iterate the process until the model converges (i.e., until the loss stabilizes or decreases minimally).
+
+---
+
+
+
 
 
 
