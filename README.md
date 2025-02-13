@@ -312,6 +312,7 @@ It supports:
 This was part of my **Deep Learning learning journey** where I focused on understanding the fundamental concepts behind neural networks.
 
 ---
+![Day6_first](https://github.com/user-attachments/assets/0710db1b-4a59-447d-94ea-7f7e7d83fa00)
 
 
 
