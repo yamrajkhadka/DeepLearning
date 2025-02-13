@@ -316,6 +316,8 @@ This was part of my **Deep Learning learning journey** where I focused on unders
 ![Day6_second](https://github.com/user-attachments/assets/0f0f749a-ae75-4222-9640-f94e4baa9233)
 ![Day6_third](https://github.com/user-attachments/assets/955f5d26-6659-447d-be0c-bb12d168cf8b)
 ![Day6_forth](https://github.com/user-attachments/assets/97f7a604-c8dd-403e-be19-7f35b41c3b96)
+![Day6_fifth](https://github.com/user-attachments/assets/66170f85-6dd5-4c5e-a464-9ec40c72863a)
+
 
 
 
