@@ -299,4 +299,47 @@ This process of computing gradients and propagating errors backward through the 
 
 
 
+## 🧠 Neural Network from Scratch (Day 6 of Deep Learning)
+
+### 🚀
+This project implements a **feedforward neural network** from scratch using NumPy.  
+It supports:
+- Forward propagation (ReLU/Sigmoid activation)
+- Backpropagation with gradient descent
+- Binary classification using log loss
+- Weight initialization and parameter updates  
+
+This was part of my **Deep Learning learning journey** where I focused on understanding the fundamental concepts behind neural networks.
+
+---
+
+## 📌 Implementation Details
+- **Programming Language:** Python  
+- **Libraries Used:** NumPy  
+- **Learning Objective:** Implement and understand neural networks without any high-level deep learning frameworks like TensorFlow or PyTorch.  
+
+---
+
+## 🛠️ Code Structure
+
+📁 `neural_network.py` – Contains the complete implementation of the NN  
+📁 `train.py` – Sample dataset & training script  
+📁 `README.md` – This file!  
+
+---
+
+## 🔢 Model Architecture
+
+- **Input Layer:** 3 neurons  
+- **Hidden Layer:** 4 neurons (ReLU activation)  
+- **Output Layer:** 1 neuron (Sigmoid activation for binary classification)  
+
+📊 **Training Parameters:**  
+- **Learning Rate:** `0.01`  
+- **Epochs:** `100`  
+- **Loss Function:** Binary Cross-Entropy  
+
+---
+
+
 
