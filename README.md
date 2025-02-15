@@ -321,6 +321,43 @@ This was part of my **Deep Learning learning journey** where I focused on unders
 
 
 
+## Day 7: Deep dive into Regulization
+
+Today, I explored **regularization techniques** and best practices for setting up ML applications from Andrew Ng's Deep Learning Specialization. Regularization helps **prevent overfitting** and improves model generalization. Here’s a quick summary:  
+
+###  Basic Recipe for Machine Learning Optimization:
+A structured approach to improving ML models:  
+
+
+### How does Regularization Prevent Overfitting?  
+Regularization techniques help neural networks **generalize better** by reducing overfitting.  
+
+
+
+
+### Regularization Techniques  
+- **L1 Regularization (Lasso)** - Adds absolute values of weights to the loss function, encouraging sparsity.  
+- **L2 Regularization (Ridge)** - Adds squared weights, reducing large weight values for better generalization.
+
+- 
+- **Dropout Regularization** - Randomly drops neurons during training to prevent over-reliance on specific features.  
+- **Data Augmentation** - Increases training data by applying transformations (flipping, rotating, etc.).  
+- **Early Stopping** - Stops training when validation loss stops improving, preventing overfitting.  
+
+---
+
+
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
