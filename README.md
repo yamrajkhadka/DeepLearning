@@ -325,8 +325,10 @@ This was part of my **Deep Learning learning journey** where I focused on unders
 
 Today, I explored **regularization techniques** and best practices for setting up ML applications from Andrew Ng's Deep Learning Specialization. Regularization helps **prevent overfitting** and improves model generalization. Here’s a quick summary:  
 
-###  Basic Recipe for Machine Learning Optimization:
-A structured approach to improving ML models:  
+###  -Basic Recipe for Machine Learning Optimization:
+A structured approach to improving ML models: 
+![image](https://github.com/user-attachments/assets/0ab818eb-1bed-4b58-b71e-aec8308bf229)
+
 
 
 ### How does Regularization Prevent Overfitting?  
