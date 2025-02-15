@@ -348,7 +348,9 @@ Regularization techniques help neural networks **generalize better** by reducing
 
 - **Dropout Regularization** - Randomly drops neurons during training to prevent over-reliance on specific features.  
 - **Data Augmentation** - Increases training data by applying transformations (flipping, rotating, etc.).  
-- **Early Stopping** - Stops training when validation loss stops improving, preventing overfitting.  
+- **Early Stopping** - Stops training when validation loss stops improving, preventing overfitting.
+- ![image](https://github.com/user-attachments/assets/e2d73a01-6cb1-42d5-bb93-925038439e1a)
+
 
 ---
 
