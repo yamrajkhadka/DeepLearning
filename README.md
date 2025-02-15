@@ -331,13 +331,15 @@ A structured approach to improving ML models:
 
 
 
-### How does Regularization Prevent Overfitting?  
+### -How does Regularization Prevent Overfitting?  
 Regularization techniques help neural networks **generalize better** by reducing overfitting.  
+![image](https://github.com/user-attachments/assets/dc9c159d-3d57-454e-86cb-3f37fc64f978)
 
 
 
 
-### Regularization Techniques  
+
+### -Regularization Techniques  
 - **L1 Regularization (Lasso)** - Adds absolute values of weights to the loss function, encouraging sparsity.  
 - **L2 Regularization (Ridge)** - Adds squared weights, reducing large weight values for better generalization.
 
