@@ -340,10 +340,12 @@ Regularization techniques help neural networks **generalize better** by reducing
 
 
 ### -Regularization Techniques  
-- **L1 Regularization (Lasso)** - Adds absolute values of weights to the loss function, encouraging sparsity.  
+- **L1 Regularization (Lasso)** - Adds absolute values of weights to the loss function, encouraging sparsity.
 - **L2 Regularization (Ridge)** - Adds squared weights, reducing large weight values for better generalization.
+- - ![image](https://github.com/user-attachments/assets/605e682e-c952-4f7c-ac79-d1470ceaa06e)
 
-- 
+
+
 - **Dropout Regularization** - Randomly drops neurons during training to prevent over-reliance on specific features.  
 - **Data Augmentation** - Increases training data by applying transformations (flipping, rotating, etc.).  
 - **Early Stopping** - Stops training when validation loss stops improving, preventing overfitting.  
