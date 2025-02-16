@@ -387,6 +387,8 @@ To test its effectiveness, I trained a neural network on the **Fashion-MNIST dat
 -With Regulization: 
 ![image](https://github.com/user-attachments/assets/2ceaa5e7-88b1-48c5-917e-aab008e2e5ef)
 ![image](https://github.com/user-attachments/assets/6161f8eb-d232-4c9c-beac-a3c9cc70d009)
+![image](https://github.com/user-attachments/assets/6cef1368-aacf-490d-b6fc-34659d7d6ed0)
+
 
 
 
