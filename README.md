@@ -356,6 +356,31 @@ Regularization techniques help neural networks **generalize better** by reducing
 
 
 
+Day 8: Exploring Regularization & Optimization – Is It Really Worth It?
+Curiosity:
+As I progressed in deep learning, a question intrigued me:
+📌 Is regularization really necessary? If yes, how much should we use, and when?
+
+Concepts Explored:
+Regularization helps prevent overfitting by constraining the model’s complexity (L1, L2, Dropout).
+However, unnecessary regularization may reduce performance by underfitting the model.
+Experiment:
+To test this, I trained a neural network on the Fashion-MNIST dataset with and without regularization:
+1️⃣ Without Regularization: Observe performance when no constraints are applied.
+2️⃣ With Regularization (L2 + Dropout): Apply techniques to mitigate overfitting.
+
+Results & Observations:
+Model	Train Accuracy	Test Accuracy
+Without Regularization	91%	87%
+With Regularization (L2 + Dropout)	88%	86%
+Key Takeaways:
+✅ Regularization is helpful when overfitting is present (i.e., when test accuracy is significantly lower than train accuracy).
+✅ If the test accuracy is already close to train accuracy, adding regularization may lead to underfitting and degrade performance.
+✅ Carefully tuning regularization is essential to balance model complexity and generalization.
+
+Code Implementation:
+
+
 
 
  
