@@ -401,7 +401,7 @@ To test its effectiveness, I trained a neural network on the **Fashion-MNIST dat
 
 ##  Day 9:   
 
-### Course Completed:  
+ 
 Today, I completed the second course of the **Deep Learning Specialization**:  
 **"Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization"**  
 
@@ -431,7 +431,7 @@ This course covered several key techniques to enhance the performance of deep ne
 This course provided deep insights into the **mathematical intuition** behind optimization algorithms and how they impact network training.  
 I had previously explored **batch normalization, softmax regression, and TensorFlow**, so my primary focus was understanding and analyzing **optimization techniques** in depth.  
 
-Next, I will **implement these optimization algorithms** to reinforce my understanding and evaluate their performance on real-world datasets. 🚀  
+
 
 ---
 
