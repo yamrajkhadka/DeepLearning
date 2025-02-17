@@ -435,7 +435,9 @@ I had previously explored **batch normalization, softmax regression, and TensorF
 
 ---
 ![image](https://github.com/user-attachments/assets/9100e409-34b7-48be-b4a6-f31931131ce9)
+![image](https://github.com/user-attachments/assets/d9b6dcf0-8e77-4a42-a789-46779f91fddd)
 ![Uploading image.png…]()
+
 
 
 
