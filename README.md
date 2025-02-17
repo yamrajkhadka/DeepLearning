@@ -399,6 +399,48 @@ To test its effectiveness, I trained a neural network on the **Fashion-MNIST dat
 
 
 
+##  Day 9:   
+
+### Course Completed:  
+Today, I completed the second course of the **Deep Learning Specialization**:  
+**"Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization"**  
+
+This course covered several key techniques to enhance the performance of deep neural networks.  
+
+---
+
+### Key Learnings  
+
+#### 🔹 Optimization Algorithms  
+- **Mini-Batch Gradient Descent**: Improves efficiency by updating weights using small batches instead of the entire dataset.  
+- **Gradient Descent with Momentum**: Helps accelerate convergence by incorporating past gradients.  
+- **RMSProp (Root Mean Square Propagation)**: Uses adaptive learning rates to avoid oscillations.  
+- **Adam Optimization Algorithm**: Combines momentum and RMSProp for efficient learning.  
+- **Learning Rate Decay**: Gradually reduces the learning rate over time to fine-tune optimization.  
+
+#### 🔹 Additional Topics Covered  
+- **Hyperparameter Tuning**: Selecting optimal values for parameters like learning rate, batch size, and regularization strength.  
+- **Batch Normalization**: Normalizing activations to improve training speed and stability.  
+- **Softmax Regression**: Multi-class classification using softmax activation.  
+- **Introduction to TensorFlow**: Basic overview of TensorFlow for deep learning implementation.  
+
+---
+
+### My Experience  
+
+This course provided deep insights into the **mathematical intuition** behind optimization algorithms and how they impact network training.  
+I had previously explored **batch normalization, softmax regression, and TensorFlow**, so my primary focus was understanding and analyzing **optimization techniques** in depth.  
+
+Next, I will **implement these optimization algorithms** to reinforce my understanding and evaluate their performance on real-world datasets. 🚀  
+
+---
+
+
+
+---
+
+  
+
 
 
 
