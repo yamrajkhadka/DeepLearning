@@ -446,15 +446,24 @@ I had previously explored **batch normalization, softmax regression, and TensorF
 ---
 
 
-## Day10:Optimizer Implementation
+## Day10: Optimizer Implementation
 
 In this experiment, I implemented and compared different optimizers (SGD, Momentum, RMSprop, and Adam) to analyze their performance on neural networks.
 
-### Optimizers Used:
+###  Optimizers Used:
 - **SGD**
 - **Momentum**
 - **RMSprop**
 - **Adam**
+
+### Optimizer Performance:
+
+| **Model**                  | **SGD**  | **Momentum** | **RMSprop** | **Adam**  |
+|----------------------------|---------|-------------|-------------|-----------|
+| **Shallow NN (1K samples)** | 0.9993  | 0.9996      | 0.9997      | 0.9993    |
+| **Shallow NN (10K samples)** | 0.8779  | 0.9944      | 0.9896      | 0.9676    |
+| **Deep NN (1K samples)**    | 0.8851  | 0.9984      | 0.9919      | 0.9413    |
+| **Deep NN (50K samples)**   | 0.9987  | 0.9987      | 0.9977      | 0.9098    |
 
 ### 🔬 Experiment Details
 - Applied optimizers to shallow and deep neural networks.
@@ -462,6 +471,10 @@ In this experiment, I implemented and compared different optimizers (SGD, Moment
 - Evaluated performance based on accuracy.
 
 
+
+---
+
+### Code implementation
 
 
 
