@@ -475,7 +475,7 @@ In this experiment, I implemented and compared different optimizers (SGD, Moment
 ---
 
 ### Code implementation
-
+![image](https://github.com/user-attachments/assets/e3fdc1b2-fb6c-4951-a6b7-e47af76b671c)
 
 
 
