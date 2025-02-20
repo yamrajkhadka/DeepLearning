@@ -492,7 +492,9 @@ In this experiment, I implemented and compared different optimizers (SGD, Moment
 - Understanding end-to-end learning, transfer learning, and multi-task learning
 
 These concepts are crucial for building scalable and reliable ML systems.
-![image](https://github.com/user-attachments/assets/9057982b-391a-4993-933d-fd4640fd6cd4)
+![image](https://github.com/user-attachments/assets/9057982b-391a-4993-933d-fd4640fd6cd4)0
+![image](https://github.com/user-attachments/assets/4a170436-2c04-4e97-ac62-c166c1a4b6e4)
+
 
 
 
