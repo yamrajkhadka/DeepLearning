@@ -481,6 +481,21 @@ In this experiment, I implemented and compared different optimizers (SGD, Moment
 
 
 
+## Day11
+# Structuring Machine Learning Projects
+
+### Course Completed: Structuring Machine Learning Projects (Deep Learning Specialization - Andrew Ng)
+
+#### Key Learnings:
+- Diagnosing and reducing ML system errors
+- Handling mismatched training and test sets
+- Comparing models with human-level performance
+- Understanding end-to-end learning, transfer learning, and multi-task learning
+
+These concepts are crucial for building scalable and reliable ML systems.
+
+
+
 
 
 
