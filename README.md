@@ -481,8 +481,7 @@ In this experiment, I implemented and compared different optimizers (SGD, Moment
 
 
 
-## Day11
-# Structuring Machine Learning Projects
+## Day11: Structuring Machine Learning Projects
 
 ### Course Completed: Structuring Machine Learning Projects (Deep Learning Specialization - Andrew Ng)
 
