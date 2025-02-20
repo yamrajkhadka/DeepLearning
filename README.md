@@ -493,8 +493,8 @@ In this experiment, I implemented and compared different optimizers (SGD, Moment
 
 These concepts are crucial for building scalable and reliable ML systems.
 ![image](https://github.com/user-attachments/assets/9057982b-391a-4993-933d-fd4640fd6cd4)0
-![image](https://github.com/user-attachments/assets/4a170436-2c04-4e97-ac62-c166c1a4b6e4)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/40a7dc26-f7f5-4ba3-8a42-0bb20562390f)
+
 
 
 
